@@ -1,7 +1,54 @@
+body {
+  padding-left: 25%;
+  padding-right: 25%;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+p {
+  font-style: italic;
+}
+
+header {
+  text-align: center;
+  font-style: bold;
+  font-weight: 700;
+}
+
 #survey-form {
   align-content: center;
   margin-left: auto;
   margin-right: auto;
+  background-color: #e2e2e2;
+  padding-left: 5%;
+  padding: 20px 0 20px 40px;
 }
 
-/* font-style=italic */
+#name,
+#email,
+#number,
+#textarea {
+  width: 500px;
+  /* height: 30px; */
+  padding: 5px;
+  font-size: 15px;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+#dropdown,
+#favQuestion,
+#submit {
+  width: 515px;
+  height: 33px;
+  padding: 5px;
+  font-size: 15px;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+#submit {
+  background-color: #dcdcdc;
+  font-weight: 600;
+}
