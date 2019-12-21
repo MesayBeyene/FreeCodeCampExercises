@@ -88,7 +88,9 @@ h4 {
 }
 
 #contactMe {
-  background-color: #ffdab9;
+  background-color: #ffe4e1;
+  padding-top: 50px;
+  margin-top: 20px;
 }
 p {
   text-align: center;
@@ -102,7 +104,10 @@ p {
   margin: 20px 46% 0px 46%;
   padding-bottom: 50px;
 }
+a {
+  text-decoration: none;
+}
 
-#git {
+#profile-link {
   padding-bottom: 30px;
 }
