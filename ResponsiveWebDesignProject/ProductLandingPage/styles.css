@@ -1,0 +1,307 @@
+body {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+.item1 {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.item2 {
+  grid-area: form;
+  /* margin-left:30% ;
+  margin-right: 30%; */
+  margin: 50px 30% 0px 30%;
+}
+
+.item3 {
+  grid-area: desc1;
+}
+.item4 {
+  grid-area: desc2;
+}
+.item5 {
+  grid-area: desc3;
+}
+.item6 {
+  grid-area: video;
+}
+
+.item7 {
+  grid-area: card;
+}
+
+.item8 {
+  grid-area: footer;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "form form form form form form"
+    "desc1 desc1 desc1 desc1 desc1 desc1"
+    "desc2 desc2 desc2 desc2 desc2 desc2"
+    "desc3 desc3 desc3 desc3 desc3 desc3"
+    "video video video video video video"
+    "card card card card card card"
+    "footer footer footer footer footer footer";
+  grid-gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+/*.grid-container > div {
+  background-color: #e8e8e8;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px; 
+}*/
+
+#header {
+  height: 70px;
+  background-color: #e2e2e2;
+}
+
+#header-img {
+  height: 50px;
+  float: left;
+  margin: 10px;
+}
+
+#nav-bar {
+  height: 50px;
+  float: right;
+  display: block;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px 16px 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+li a:hover {
+  background-color: #333;
+}
+
+#startingSection {
+  clear: both;
+
+  text-align: center;
+}
+
+#form {
+  align-items: center;
+}
+
+/* h2 {
+  padding-top: 10px;
+} */
+
+#email,
+#submit {
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#email {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#submit {
+  background-color: orange;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 20px;
+}
+
+.item3,
+.item4,
+.item5 {
+  margin-left: 15%;
+  margin-right: 15%;
+  /* height: 100px; */
+}
+
+.iconContainer {
+  width: 15%;
+}
+
+.description {
+  width: 85%;
+}
+
+#icon1,
+#icon2,
+#icon3 {
+  float: left;
+}
+#desc1,
+#desc2,
+#desc3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  text-align: left;
+}
+
+h2 {
+  margin-left: 20px;
+  /* margin-bottom: 0px; */
+}
+
+.discP {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.icons {
+  width: 75px;
+  height: 75px;
+}
+
+#howItWorks {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.cards > div {
+  background-color: #f1f1f1;
+  width: 23%;
+  margin: 0.5%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+}
+
+#copyright {
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-top: 50px;
+  padding-right: 0px;
+}
+
+/* On screens that are 992px or less, which is almost equivalent to Ipad*/
+@media screen and (max-width: 992px) {
+  #header {
+    height: 120px;
+  }
+  #nav-bar {
+    float: left;
+  }
+  .item2 {
+    margin-top: 100px;
+  }
+  #form {
+    align-items: center;
+  }
+  #email,
+  #submit {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  #howItWorks {
+    width: 600px;
+    margin: 10px 0px 10px 25px;
+  }
+  .cards {
+    display: block;
+  }
+  #pricingOne,
+  #pricingTwo,
+  #pricingThree {
+    width: 600px;
+    display: block;
+    margin: 10px 0px 10px 25px;
+  }
+  #pricingTwo {
+    float: left;
+  }
+  #pricingThree {
+    float: left;
+  }
+  #copyright {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+/* On screens that are 600px or less, which is almost equivalent to Iphone*/
+@media screen and (max-width: 600px) {
+  #header {
+    height: 120px;
+  }
+  #nav-bar {
+    float: left;
+  }
+  .item2 {
+    margin-top: 100px;
+  }
+  #form {
+    align-items: center;
+  }
+  #email,
+  #submit {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  #howItWorks {
+    width: 500px;
+    margin: 10px 0px 10px 0px;
+  }
+  .cards {
+    display: block;
+  }
+  #pricingOne,
+  #pricingTwo,
+  #pricingThree {
+    width: 500px;
+    display: block;
+    margin: 10px 0px 10px 0px;
+  }
+  #pricingTwo {
+    float: left;
+  }
+  #pricingThree {
+    float: left;
+  }
+  #copyright {
+    padding: 0px;
+    margin: 0px;
+  }
+}

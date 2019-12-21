@@ -1,0 +1,49 @@
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: form;
+}
+.item3 {
+  grid-area: desc1;
+}
+.item4 {
+  grid-area: desc2;
+}
+.item5 {
+  grid-area: desc3;
+}
+.item6 {
+  grid-area: video;
+}
+
+.item7 {
+  grid-area: card;
+}
+
+.item8 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "form form form form form form"
+    "desc1 desc1 desc1 desc1 desc1 desc1"
+    "desc2 desc2 desc2 desc2 desc2 desc2"
+    "desc3 desc3 desc3 desc3 desc3 desc3"
+    "video video video video video video"
+    "card card card card card card"
+    "footer footer footer footer footer footer";
+  grid-gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #e8e8e8;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}

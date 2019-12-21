@@ -1,5 +1,54 @@
+body {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #333333;
+  margin: 0;
+}
+
+#main {
+  background-color: #eeeeee;
+  position: sticky;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+#title {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0px;
+  padding-top: 30px;
+}
+#headerP {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#img-div {
+  margin: 20px;
+  padding: 50px 50px 30px 50px;
+  background-color: #ffffff;
+  /* margin-top: 10px 20px 20px ; */
+}
+
 #image {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+}
+#img-caption {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#tribute-info {
+  margin-left: 25%;
+  margin-right: 25%;
+  line-height: 2;
+}
+h3 {
+  text-align: center;
 }
